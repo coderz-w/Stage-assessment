@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/backbox.css" />
+    <link rel="stylesheet" href="./css/report.css" />
+    <link rel="stylesheet" href="./css/showC.css" />
+    <link rel="stylesheet" href="./css/pre24.css" />
+    <link rel="stylesheet" href="./css/7day.css" />
+    <link rel="stylesheet" href="./css/bottom.css" />
+    <link rel="stylesheet" href="./css/searchPage.css" />
+    <link rel="stylesheet" href="./css/searchAdvice.css">
+    <title>腾讯天气</title>
+  </head>
+  <body>
+    <div class="searchAdivce">
+      <div class="_adviceitem"></div>
+    </div>
+    <div class="searchPage">
+      <div class="searchBar">
+        <div class="input">
+          <img src="./images/搜索.png" alt="" /><input
+            type="text"
+            placeholder="搜索地区"
+          />
+        </div>
+        <div class="check">取消</div>
+      </div>
+      <div class="currentLocation">
+        <h2>当前定位</h2>
+        <div class="_currentElse"></div>
+      </div>
+      <div class="history">
+        <div id="currentLocationheadline">
+          <h2>历史记录</h2>
+          <img src="./images/删除.png" alt="" id="deleteHistory" />
+        </div>
+        <div class="historybox"></div>
+      </div>
+      <div class="hotCity">
+        <h2>热门城市</h2>
+        <div class="hotCitybox">
+          <div>北京</div>
+          <div>上海</div>
+          <div>广州</div>
+          <div>深圳</div>
+          <div>郑州</div>
+          <div>西安</div>
+          <div>南京</div>
+          <div>杭州</div>
+          <div>武汉</div>
+          <div>成都</div>
+          <div>沈阳</div>
+          <div>天津</div>
+        </div>
+      </div>
+    </div>
+    <!-- 主页面 -->
+    <div class="main">
+      <div class="header">
+        <div class="h_return"><img src="./images/arrow.png" alt="" /></div>
+        <div class="h_position">
+          <div class="h_inner">
+            <div><img src="./images/location.png" alt="" /></div>
+            <span class="_hcity">北京</span>
+          </div>
+        </div>
+        <div class="h_share"><img src="./images/link_icon.png" alt="" /></div>
+      </div>
+      <div class="showC">
+        <div class="sc1">23°</div>
+        <div class="sc2">多云</div>
+        <div class="sc3">东风一级</div>
+        <div class="sc4">tm的写不了爆啦爆啦</div>
+      </div>
+      <div class="backbox">
+        <img src="./images/bg01.png" alt="" class="bb1" />
+        <img src="./images/bg02.png" alt="" class="bb2" />
+        <img src="./images/bg03.png" alt="" class="bb3" />
+        <img src="./images/bg04.png" alt="" class="bb4" />
+      </div>
+      <div class="report">
+        <div class="_rtoday">
+          <div class="tdu">
+            <div>今天</div>
+            <div>24°</div>
+          </div>
+          <div class="tdd">
+            <div>小雨转多云</div>
+            <div><img src="./images/03.png" alt="" class="tdimg" /></div>
+          </div>
+        </div>
+        <div class="_rtomor">
+          <div class="tdu">
+            <div>明天</div>
+            <div>24°</div>
+          </div>
+          <div class="tdd">
+            <div>小雨转多云</div>
+            <div><img src="./images/03.png" alt="" class="tdimg" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pre24"></div>
+    <div class="pre7">
+      <div class="pre7u"></div>
+      <!--echarts图像  -->
+      <div style="overflow-x: scroll;margin-top: -60px" id="canvasOuter">
+        <div id="chartContainer" style="width: 450px; height: 200px;margin-left: -40px;"></div>
+      </div>
+
+      <!--  -->
+      <div class="pre7d"></div>
+    </div>
+    <div class="bottom">
+      <div class="botli">
+        <div><img src="./images/cloth.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>穿衣</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/sports.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>运动</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/umbrella.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>雨伞</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/sun.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>防嗮</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/pill.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>感冒</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/diaoyu.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>钓鱼</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/washcar.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>洗车</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/lvyou.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>旅游</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/bus.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>交通</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/kouhong.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>化妆</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/air.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>空气</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/chenlian.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>晨练</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/smile.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>舒适度</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/cold.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>过敏</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/liangshai.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>晾晒</div>
+      </div>
+      <div class="botli">
+        <div><img src="./images/sun.png" alt="" /></div>
+        <div class="advice">炎热</div>
+        <div>中暑</div>
+      </div>
+    </div>
+    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+    <script src="./js/data.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/turnImg.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/place.js"></script>
+    <script src="./js/24hour.js"></script>
+    <script src="./js/7day.js"></script>
+    <script src="./js/showC.js"></script>
+    <script src="./js//bottom.js"></script>
+    <script src="./js/searchPage.js"></script>
+    <script src="./js/scorll.js"></script>
+  </body>
+</html>

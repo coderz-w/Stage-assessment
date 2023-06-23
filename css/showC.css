@@ -1,0 +1,41 @@
+.showC {
+    position: relative;
+    padding-top: 50px;
+    color: aliceblue;
+}
+.sc1 {
+    display: flex;
+    margin-top: 300px;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    font-size: 60px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+.sc2 {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: -12px auto;
+}
+.sc3 {
+    display: flex;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
+    margin: 14px auto;
+    font-size: 13px;
+}
+.sc4 {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    font-size: 16px;
+}

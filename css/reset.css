@@ -1,0 +1,62 @@
+/* CSS Reset */
+
+/* 基本样式重置 */
+html,
+body,
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  background-color: #F4F4F4;
+}
+
+/* 列表样式重置 */
+ul,
+ol {
+  list-style: none;
+}
+
+/* 链接样式重置 */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 表格样式重置 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 图像样式重置 */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* 输入框样式重置 */
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+/* 按钮样式重置 */
+button {
+  cursor: pointer;
+}
+
+/* 添加其他自定义的重置样式 */
+canvas {
+  overflow-x: scroll !important;
+}
+#canvasOuter::-webkit-scrollbar {
+display: none;
+}
