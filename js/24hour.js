@@ -5,6 +5,7 @@ async function getTheDayWeather(city){
 }
 function drawTheDayWeather(datalist){
 const pre24Box = document.querySelector('.pre24');
+pre24Box.innerHTML=''
 for(let i=0;i<datalist.length;i++){
 const pre24InnerBox = document.createElement('div');
 pre24InnerBox.className = 'pre24_innder';

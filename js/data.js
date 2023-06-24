@@ -3,9 +3,9 @@ const apiKey = "a1340c0aac18f066c5c79706dfb30ef3";
 // 百度
 const apiKey1 = "4G3BZ-OOJWZ-3EJXU-ZSCWG-DTMZ5-QWBBF";
 // 和风
-// const apiKey2='89768f944fcb461b9ee6c04c1e928c03'
-// const apiKey2='60a13d9c31ec42f1bdbae23e3d53002d'
- const apiKey2='0ebba5bf0ebd43a1a82e6bda5798facc'
+const apiKey2='89768f944fcb461b9ee6c04c1e928c03'
+//  const apiKey2='60a13d9c31ec42f1bdbae23e3d53002d'
+//  const apiKey2='0ebba5bf0ebd43a1a82e6bda5798facc'
 
 const appid = 13324392;
 const appsecret = "9nzMPkAY";

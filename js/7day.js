@@ -1,5 +1,6 @@
 function drawSevenDayWeatherUp(datalist){
     const pre7BoxUp = document.querySelector('.pre7u');
+    pre7BoxUp.innerHTML=''
     for(let i=0;i<datalist.length;i++){
     const pre7InnerBox = document.createElement('div');
     pre7InnerBox.className = 'pre7u_innder';
@@ -22,6 +23,7 @@ function drawSevenDayWeatherUp(datalist){
 }
 function drawSevenDayWeatherD(datalist){
     const pre7BoxD = document.querySelector('.pre7d');
+    pre7BoxD.innerHTML=''
     for(let i=0;i<datalist.length;i++){
     const pre7InnerBox = document.createElement('div');
     pre7InnerBox.className = 'pre7d_innder';
